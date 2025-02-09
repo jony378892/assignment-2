@@ -7,12 +7,15 @@ function Questions({ onFinish }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch("https://api.jsonserve.com/Uw5CrX");
+        const res = await fetch(
+          "https://api.allorigins.win/get?url=" +
+            encodeURIComponent("https://api.jsonserve.com/Uw5CrX")
+        );
         if (!res.ok) {
           throw new Error("Network response was not ok");
         }
         const data = await res.json();
-        setSampleData(data);
+        setSampleData(JSON.parse(data.contents));
       } catch (error) {
         setError(error.message);
       }

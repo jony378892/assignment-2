@@ -1,4 +1,4 @@
-function Results({ name, totalMark, totalQue }) {
+function Results({ userName, totalMark, totalQue }) {
   const percentage = (totalMark / totalQue) * 100;
   let message = "";
   let messageClass = "";
@@ -16,7 +16,7 @@ function Results({ name, totalMark, totalQue }) {
 
   return (
     <div className="text-center flex flex-col gap-4 p-6 bg-white rounded-lg shadow-lg">
-      <p className="text-xl font-semibold">Hello, {name}</p>
+      <p className="text-xl font-semibold">Hello, {userName}</p>
       <p className="text-lg">
         Your total score is {totalMark} out of {totalQue}
       </p>

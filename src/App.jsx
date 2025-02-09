@@ -4,6 +4,7 @@ import Introduction from "./components/Intruduction";
 import Results from "./components/Results";
 
 function App() {
+  const [name, setName] = useState();
   const [start, setStart] = useState(false);
   const [showResults, setShowResults] = useState(false);
   const [totalMark, setTotalMark] = useState(0);
@@ -29,11 +30,15 @@ function App() {
               name="User"
               totalMark={totalMark}
               totalQue={totalQue}
+              userName={name}
             />
           ) : start ? (
             <Questions onFinish={handleFinishQuiz} />
           ) : (
-            <Introduction handleStart={handleStart} />
+            <Introduction
+              handleStart={handleStart}
+              setName={setName}
+            />
           )}
         </div>
       </div>

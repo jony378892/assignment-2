@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 
-function Introduction({ handleStart }) {
-  const [name, setName] = useState();
+function Introduction({ handleStart, setName }) {
   const nameRef = useRef(null);
 
   function handleName(e) {
