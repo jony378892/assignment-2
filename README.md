@@ -2,6 +2,12 @@
 
 This project is a simple quiz application built with React. It fetches questions from an external API and allows users to interact with them. The application keeps track of the user's score and displays result at the end of the quiz with proper message about his progress.
 
+# Project Link
+
+https://youtu.be/Ug1UbvqrKYQ
+
+https://drive.google.com/drive/folders/1eIZ7ONUGiIL0rVGFVZcO-UUnA81QDs1U?usp=sharing
+
 ## Setup Instructions
 
 1. **Create the project:**
@@ -52,3 +58,9 @@ The application includes basic error handling for the API request. If the data f
 ## License
 
 This project is licensed under the MIT License.
+
+## Additional Resources
+
+For more information, visit the [Video Link](https://youtu.be/Ug1UbvqrKYQ).
+
+[Image Link](https://drive.google.com/drive/folders/1eIZ7ONUGiIL0rVGFVZcO-UUnA81QDs1U?usp=sharing).
