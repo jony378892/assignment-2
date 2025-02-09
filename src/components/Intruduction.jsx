@@ -12,7 +12,10 @@ function Introduction({ handleStart }) {
 
   return (
     <>
-      <p className="text-lg mt-10"> ENTER YOUR NAME</p>
+      <p className="text-lg mt-10 text-center">
+        {" "}
+        ENTER YOUR NAME TO GET STARTED
+      </p>
       <input
         type="text"
         className="px-3 py-1.5  border border-blue-500 rounded-md bg-white"
