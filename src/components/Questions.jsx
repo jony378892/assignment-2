@@ -57,7 +57,7 @@ function Questions({ onFinish }) {
           </p>
 
           <div className="flex flex-col gap-3">
-            <p className="text-xl text-rose-600">
+            <p className="text-lg text-stone-800 font-medium">
               {ques[questionIndex].description}
             </p>
             <hr className="my-5" />
@@ -65,17 +65,17 @@ function Questions({ onFinish }) {
               {ques[questionIndex].options.map((question, index) => (
                 <button
                   key={question.id}
-                  className={`text-sm block w-full text-start p-2 rounded-md cursor-pointer transition-all ${
+                  className={`text-sm block w-full text-start p-2 rounded-md cursor-pointer transition-all border border-gray-400 ${
                     selected !== null && selected.index === index
                       ? selected.isCorrect
                         ? "text-white bg-green-500"
-                        : "text-white bg-red-500"
-                      : "text-blue-500 bg-white"
+                        : "text-white bg-red-500 "
+                      : "text-black bg-white"
                   }`}
                   disabled={selected !== null}
                   onClick={() => handleSelect(index, question.is_correct)}>
-                  <span className="py-0.5 px-1.5 rounded-full bg-stone-700 text-white mr-3 font-semibold">
-                    {index + 1}
+                  <span className="py-0.5 px-1.5 rounded-full mr-2 font-semibold">
+                    {index + 1}.
                   </span>{" "}
                   <span className="font-medium">{question.description} </span>
                 </button>

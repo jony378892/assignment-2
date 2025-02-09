@@ -22,8 +22,8 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col h-screen items-center justify-center ">
-      <div className="flex flex-col gap-3 p-6 bg-sky-100 rounded-xl items-center shadow-lg w-3/4 md:w-2/3 lg:w-5/12 h-fit">
+    <div className="flex flex-col h-screen items-center justify-center bg-blue-500">
+      <div className="flex flex-col gap-3 p-6 bg-white rounded-xl items-center shadow-lg w-3/4 md:w-2/3 lg:w-5/12 h-fit">
         <div className="flex flex-col justify-center gap-4">
           {showResults ? (
             <Results
