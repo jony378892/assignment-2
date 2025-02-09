@@ -36,6 +36,10 @@ This component allows the user to enter their name and start the quiz.
 
 This component fetches the quiz questions from an external API and displays them one by one. It also handles the user's answers and calculates the total score.
 
+### Results
+
+This component displays the user's total score at the end of the quiz along with a message about their progress. It provides feedback based on the user's performance.
+
 ## Error Handling
 
 The application includes basic error handling for the API request. If the data fails to load, an error message is displayed to the user.
